@@ -15,7 +15,10 @@
     --card-border-radius: 1rem;
     --btn-padding: 0.6rem 2rem;
     --search-padding: 0.6rem 1rem;
-    --carde-padding: 1rem;
+    --card-padding: 1rem;
+    
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
 }
 
 *, *::before, *::after{
@@ -79,7 +82,7 @@ img{
     color: var(--color-gray);
 }
 
-/*NAVBAR*/
+/*========================NAVBAR==========================*/
 
 nav{
     width: 100%;
@@ -114,8 +117,116 @@ nav .search-bar input[type="search"]::placeholder{
     color: var(--color-gray);
 }
 
-nav.create{
+nav .create{
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+/*========================MAIN==========================*/
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 18vh auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+/*========================LEFT==========================*/
+main .container .left{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+}
+
+/*========================MIDDLE==========================*/
+.middle .stories{
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    gap: 0.5rem;
+}
+
+.middle .stories .story{
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.middle .stories .story::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(transparent,rgba(0,0,0,0.75));
+    position: absolute;
+    bottom: 0;
+}
+
+.middle .stories .story .name{
+    z-index: 2;
+}
+
+.middle .stories .story:nth-child(1){
+    background:url('./img/story-1.jpg') no-reapeat center center/cover;
+}
+
+.middle .stories .story:nth-child(2){
+    background:url('./img/story-2.jpg') no-reapeat center center/cover;
+}
+
+.middle .stories .story:nth-child(3){
+    background:url('./img/story-3.jpg') no-reapeat center center/cover;
+}
+
+.middle .stories .story:nth-child(4){
+    background:url('./img/story-4.jpg') no-reapeat center center/cover;
+}
+
+.middle .stories .story:nth-child(5){
+    background:url('./img/story-5.jpg') no-reapeat center center/cover;
+}
+
+.middle .stories .story:nth-child(6){
+    background:url('./img/story-6.jpg') no-reapeat center center/cover;
+}
+
+.middle .story .profile-photo{
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    border: 2px solid var(--color-primary);
+}
+
+/*========================CREAR CUACK=============*/
+.middle .create-post{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.middle .create-post input[type="text"]{
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
 }
