@@ -41,7 +41,7 @@ body{
 }
 
 .profile-photo{
-    width: 2.7 rem;
+    width: 2.7rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
