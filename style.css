@@ -10,13 +10,13 @@
     --color-danger: hsl(0, 95%, 65%);
     --color-dark: hsl(252, 30%, 17%);
     --color-black: hsl(252, 30%, 10%);
-    
+
     --border-radius: 2rem;
     --card-border-radius: 1rem;
     --btn-padding: 0.6rem 2rem;
     --search-padding: 0.6rem 1rem;
     --card-padding: 1rem;
-    
+
     --sticky-top-left: 5.4rem;
     --sticky-top-right: -18rem;
 }
@@ -131,16 +131,8 @@ main{
 
 main .container{
     display: grid;
-    grid-template-columns: 18vh auto 20vw;
-    column-gap: 2rem;
     position: relative;
-}
-
-/*========================LEFT==========================*/
-main .container .left{
-    height: max-content;
-    position: sticky;
-    top: var(--sticky-top-left);
+    width: 45rem;
 }
 
 /*========================MIDDLE==========================*/
@@ -180,27 +172,27 @@ main .container .left{
 }
 
 .middle .stories .story:nth-child(1){
-    background:url('./img/story-1.jpg') no-reapeat center center/cover;
+    background:url('./img/story-1.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(2){
-    background:url('./img/story-2.jpg') no-reapeat center center/cover;
+    background:url('./img/story-2.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(3){
-    background:url('./img/story-3.jpg') no-reapeat center center/cover;
+    background:url('./img/story-3.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(4){
-    background:url('./img/story-4.jpg') no-reapeat center center/cover;
+    background:url('./img/story-4.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(5){
-    background:url('./img/story-5.jpg') no-reapeat center center/cover;
+    background:url('./img/story-5.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(6){
-    background:url('./img/story-6.jpg') no-reapeat center center/cover;
+    background:url('./img/story-6.jpg') no-repeat center center/cover;
 }
 
 .middle .story .profile-photo{
@@ -285,4 +277,40 @@ main .container .left{
 
 .middle.liked-by p{
     margin-left: 0.5rem;
+}
+
+/* ==============================================
+MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS
+================================================= */
+
+@media screen and (max-width: 1200 px){
+    .container{
+        width: 96%;
+    }
+
+    main .container{
+        width: 5rem;
+    }
+
+    .left{
+        display: none;
+    }
+}
+
+/* ==============================================
+MEDIA QUERIES FOR TABLETS AND PHONES
+================================================= */
+
+@media screen and (max-width: 992 px){
+    .container{
+        width: 20%;
+    }
+    
+    .search-bar{
+        display: none;
+    }
+
+    main .container{
+        width: 10%;
+    }
 }
