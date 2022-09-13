@@ -3,13 +3,13 @@
 :root{
     --color-white: hsl(252, 30%, 100%);
     --color-light: hsl(252, 30%, 95%);
-    --color-gray: hsl(252, 15%, 65%);
+    --color-gray: hsl(240, 2%, 65%);
     --color-primary: hsl(252, 75%, 60%);
     --color-secondary: hsl(252, 100%, 90%);
     --color-success: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
-    --color-dark: hsl(252, 30%, 17%);
-    --color-black: hsl(252, 30%, 10%);
+    --color-black: hsl(252, 30%, 0%);
+    --color-dark: hsl(240, 2%, 9%);
 
     --border-radius: 2rem;
     --card-border-radius: 1rem;
@@ -28,12 +28,13 @@
     text-decoration: none;
     list-style: none;
     border:none;
+    color: var(--color-white);
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     color:var(--color-dark);
-    background: var(--color-light);
+    background: var(--color-dark);
     overflow-x: hidden;
 }
 
@@ -50,6 +51,12 @@ body{
     overflow: hidden;
 }
 
+.logo{
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
 img{
     display: block;
     width: 100%;
@@ -63,6 +70,12 @@ img{
     cursor: pointer;
     transition: all 300ms ease;
     font-size: 0.9rem;
+}
+
+.log{
+    cursor:pointer;
+    display: inline-flex;
+    gap:1rem;
 }
 
 .btn:hover {
@@ -86,7 +99,7 @@ img{
 
 nav{
     width: 100%;
-    background: var(--color-white);
+    background: var(--color-black);
     padding: 0.7rem 0;
     position: fixed;
     top: 0;
@@ -100,7 +113,7 @@ nav .container{
 }
 
 nav .search-bar{
-    background: var(--color-light);
+    background: var(--color-dark);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
 }
@@ -209,7 +222,7 @@ main .container{
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
-    background: var(--color-white);
+    background: var(--color-black);
     padding: 0.4rem var(--card-padding);
     border-radius: var(--border-radius);
 }
@@ -225,7 +238,7 @@ main .container{
 
 /* ============================FEEDS=====================*/
 .middle .feeds .feed{
-    background: var(--color-white);
+    background: var(--color-black);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     margin: 1rem 0;
@@ -267,7 +280,7 @@ main .container{
     display: block;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-black);
     margin-left: -0.6rem;
 }
 
@@ -306,7 +319,7 @@ MEDIA QUERIES FOR PHONES
     .container{
         width: 90%;
     }
-    
+
     nav .search-bar{
         display: none;
     }
