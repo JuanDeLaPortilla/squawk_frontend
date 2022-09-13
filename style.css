@@ -283,34 +283,41 @@ main .container{
 MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS
 ================================================= */
 
-@media screen and (max-width: 1200 px){
+@media screen and (max-width: 1200px){
     .container{
         width: 96%;
     }
 
     main .container{
-        width: 5rem;
+        width: 80vw;
     }
 
-    .left{
-        display: none;
-    }
 }
 
 /* ==============================================
-MEDIA QUERIES FOR TABLETS AND PHONES
+MEDIA QUERIES FOR TABLETS
 ================================================= */
 
-@media screen and (max-width: 992 px){
+/* ==============================================
+MEDIA QUERIES FOR PHONES
+================================================= */
+
+@media screen and (max-width: 900px){
     .container{
-        width: 20%;
+        width: 90%;
     }
     
-    .search-bar{
+    nav .search-bar{
         display: none;
     }
 
     main .container{
-        width: 10%;
+        grid-template-columns: 0 auto 0;
+        width: 100vw;
     }
+
+    body{
+        width: 80vw;
+    }
+
 }
