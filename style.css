@@ -178,10 +178,12 @@ details[open] summary ~ *{
 
 @keyframes sweep{
     from{
-        opacity: 0; margin-top: -10px;
+        opacity: 0;
+        margin-top: -10px;
     }
     to{
-        opacity: 1; margin-top: 0.75rem; 
+        opacity: 1;
+        margin-top: 0.75rem;
     }
 }
 /*========================MAIN==========================*/
@@ -340,6 +342,100 @@ main .container{
     margin-left: 0.5rem;
 }
 
+/*========================ABOUT US======================*/
+.about-us{
+    background: var(--color-black);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 1.5rem;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    order: 0;
+}
+
+.about-us h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 5px var(--color-light-dark) solid;
+}
+
+.team-col {
+    flex-basis: 48%;
+    padding: 2.5rem 2px;
+}
+
+.team-col img {
+    width: 17.5rem;
+    display: block;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin: auto auto;
+}
+
+.team-col h2 {
+    font-size: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.team-col p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.95rem 0;
+}
+
+.team-col .age{
+    color: var(--color-gray);
+    padding: 0 0;
+    margin-top: -0.30rem;
+    font-size: 0.96rem;
+}
+
+@media (max-width: 952px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .one {
+        order: 1;
+    }
+
+    .two {
+        order: 2;
+    }
+
+    .team-col h1 {
+        font-size: 40px;
+    }
+
+    .team-col p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 700px) {
+    .one {
+        order: 1;
+    }
+
+    .two {
+        order: 2;
+    }
+
+    .team-col h1 {
+        font-size: 26px;
+    }
+
+    .team-col p {
+        font-size: 15px;
+    }
+}
+
 /* ==============================================
 MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS
 ================================================= */
@@ -352,7 +448,7 @@ MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS
     main .container{
         width: 80vw;
     }
-    
+
     .user-menu{
         right: 2vw;
     }
