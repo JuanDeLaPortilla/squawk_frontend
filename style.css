@@ -10,6 +10,7 @@
     --color-danger: hsl(0, 95%, 65%);
     --color-black: hsl(252, 30%, 0%);
     --color-dark: hsl(240, 2%, 9%);
+    --color-light-dark: hsl(240, 2%, 15%);
 
     --border-radius: 2rem;
     --card-border-radius: 1rem;
@@ -29,6 +30,7 @@
     list-style: none;
     border:none;
     color: var(--color-white);
+    outline: none;
 }
 
 body{
@@ -135,7 +137,53 @@ nav .create{
     align-items: center;
     gap: 2rem;
 }
+/*========================USER MENU=====================*/
+summary{
+    cursor: pointer;
+}
 
+summary:hover{
+    border: 2.5px var(--color-primary) solid;
+}
+
+details[open] summary ~ *{
+    animation: sweep .5s ease-in-out;
+}
+
+.user-menu{
+    margin-top: 0.75rem;
+    position: fixed;
+    background: var(--color-light-dark);
+    justify-content: space-around;
+    right: 10vw;
+    font-size: 0.90rem;
+}
+
+.user-menu > li{
+    display: block;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.user-menu > li:hover{
+    opacity: 0.8;
+}
+
+.user-menu > li i{
+    padding: auto 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+@keyframes sweep{
+    from{
+        opacity: 0; margin-top: -10px;
+    }
+    to{
+        opacity: 1; margin-top: 0.75rem; 
+    }
+}
 /*========================MAIN==========================*/
 main{
     position: relative;
@@ -304,12 +352,11 @@ MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS
     main .container{
         width: 80vw;
     }
-
+    
+    .user-menu{
+        right: 2vw;
+    }
 }
-
-/* ==============================================
-MEDIA QUERIES FOR TABLETS
-================================================= */
 
 /* ==============================================
 MEDIA QUERIES FOR PHONES
