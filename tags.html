@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Tags</title>
+    <link rel="stylesheet" href="./css/a-style-listas.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo-dashboard.png" id="myImage">
+                    <h2><span class="primary">SQU</span>AWK!</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                    <a href="./dashboard.html" >
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="./users.html">
+                        <span class="material-icons-sharp">diversity_2</span>
+                        <h3>Usuarios</h3>
+                    </a>
+                    <a href="./cuacks.html">
+                        <span class="material-icons-sharp">forum</span>
+                        <h3>Cuacks</h3>
+                    </a>
+                    <a href="./tags.html" class="active">
+                        <span class="material-icons-sharp">style</span>
+                        <h3>Tags</h3>
+                    </a>
+                    <!----- Contador de mensajes
+                    <a href="">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                        -------> 
+                    <a href="./staff.html">
+                        <span class="material-icons-sharp">groups_3</span>
+                        <h3>Staff</h3>
+                    </a>
+                    <a href="">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Salir</h3>
+                    </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Tags</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>      
+
+            <div class="recent-orders">
+                <h2>Lista de Tags</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descripción</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                        -->
+                        
+                </table>
+            </div>
+            
+            <div class="right">
+                <div class="sales-analytics">
+                    <div class="item add-product">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Añadir Tag</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-----------EN OF MAIN--------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p><b>Gianpierre Javier</b> Vargas Carrasco</p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src=".//images/gian.jpg">
+                    </div>
+                </div>
+            </div>
+            <!----------END OF TOP---------->
+        </div>
+    </div>
+
+    <script src="./js/tags.js"></script>
+    <script src="./js/a-tags.js"></script>
+</body>
+</html>

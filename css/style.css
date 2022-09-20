@@ -235,27 +235,27 @@ main .container{
 }
 
 .middle .stories .story:nth-child(1){
-    background:url('./img/story-1.jpg') no-repeat center center/cover;
+    background:url('../img/story-1.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(2){
-    background:url('./img/story-2.jpg') no-repeat center center/cover;
+    background:url('../img/story-2.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(3){
-    background:url('./img/story-3.jpg') no-repeat center center/cover;
+    background:url('../img/story-3.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(4){
-    background:url('./img/story-4.jpg') no-repeat center center/cover;
+    background:url('../img/story-4.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(5){
-    background:url('./img/story-5.jpg') no-repeat center center/cover;
+    background:url('../img/story-5.jpg') no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(6){
-    background:url('./img/story-6.jpg') no-repeat center center/cover;
+    background:url('../img/story-6.jpg') no-repeat center center/cover;
 }
 
 .middle .story .profile-photo{
@@ -476,4 +476,35 @@ MEDIA QUERIES FOR PHONES
         width: 80vw;
     }
 
+}
+
+/*====================================== LOGIN=================
+*/
+
+.pop-up{
+    background-color: rgba(255,255,255,0,5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size:0.9rem; 
+}
+
+.pop-up .card{
+    background: var(--color-black);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50rem;
+}
+
+.pop-up .card input{
+    width: 20rem;
+    padding: 0.70rem 0.70rem;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
