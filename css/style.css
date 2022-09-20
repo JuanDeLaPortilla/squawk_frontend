@@ -30,7 +30,6 @@
     list-style: none;
     border:none;
     color: var(--color-white);
-    outline: none;
 }
 
 body{
@@ -482,7 +481,7 @@ MEDIA QUERIES FOR PHONES
 */
 
 .pop-up{
-    background-color: rgba(255,255,255,0,5);
+    background: rgba(255,255,255,0.5);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -492,19 +491,43 @@ MEDIA QUERIES FOR PHONES
     text-align: center;
     display: grid;
     place-items: center;
-    font-size:0.9rem; 
+    font-size:0.9rem;
 }
 
 .pop-up .card{
     background: var(--color-black);
     padding: 3rem;
     border-radius: var(--card-border-radius);
-    width: 50rem;
+    width: 45rem;
 }
 
-.pop-up .card input{
+.pop-up .card h4{
+    font-size: x-large;
+}
+
+.pop-up .card a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.pop-up .card .login-input{
     width: 20rem;
     padding: 0.70rem 0.70rem;
     margin: 8px 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.75rem auto;
+    color: var(--color-black);
+    transition: border-width 0.2s ease;
+}
+
+.pop-up .card input[type="submit"]{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 8rem;
+    margin-top: 0.75rem;
+}
+
+.pop-up .card h4, .pop-up .card a{
+    margin-bottom: 0.2rem;
 }

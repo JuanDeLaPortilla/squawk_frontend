@@ -29,7 +29,6 @@ Users.forEach(users => {
     const trContent =`
                     <td>${users.userName}</td>
                     <td>${users.userEmail}</td>
-                    <td>${users.userPassword}</td>
                     <td>${users.userBirthday}</td>
                     <td><center>
                         <div class="profile-photo">

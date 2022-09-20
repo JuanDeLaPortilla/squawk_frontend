@@ -361,7 +361,7 @@ main .recent-orders h2{
 
 main .recent-orders table{
     background: var(--color-white);
-    width: 148%;
+    width: 100%;
     table-layout: fixed;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
@@ -537,9 +537,8 @@ main .recent-orders a{
 .right .sales-analytics .add-product div h3{
     font-weight: 600;
 }
-
 /*--------------MEDIA QUERIES------------*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1600px){
     .container{
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
@@ -578,12 +577,12 @@ main .recent-orders a{
         width: 83vw;
     }
 
-    main table thead tr th:last-child,
+    main table thead tr th:last-child, 
     main table thead tr th:first-child{
         display: none;
     }
 
-    main table tbody tr td:last-child,
+    main table tbody tr td:last-child, 
     main table tbody tr td:first-child{
         display: none;
     }
@@ -618,7 +617,7 @@ main .recent-orders a{
     aside .logo{
         margin-left:  1rem;
     }
-
+    
     aside .logo h2{
         display: inline;
     }
