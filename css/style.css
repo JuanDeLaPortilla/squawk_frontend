@@ -619,13 +619,18 @@ MEDIA QUERIES FOR PHONES
 ================================================= */
 
 @media screen and (max-width: 900px){
-    main .container .right{
-        display: absolute;
+    main .container.two-rows .right{
         padding: var(--card-padding);
+        position: relative;
+        top: 0;
     }
     main .container.two-rows{
         grid-template-columns: none;
         width: 100vw;
+    }
+    
+    .middle .submit-cuack{
+        margin: -1rem 0 -0.3rem;
     }
 }
 /*===========================TERMS INFO=================*/
@@ -707,4 +712,29 @@ MEDIA QUERIES FOR PHONES
 
 .right .profile-info .btn.btn-primary{
     margin-top: 1rem;
+}
+
+
+/* ==============================================
+MEDIA QUERIES FOR PHONES
+================================================= */
+
+@media screen and (max-width: 900px){
+     main .container.two-rows {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    
+    main .container.two-rows .right.first{
+        padding: var(--card-padding);
+        position: relative;
+        top: 0;
+        order: 1;
+        margin: -1rem 0 1rem;
+    }
+    
+    main .container.two-rows .middle.second{
+        order: 2;
+        margin: 1rem 0;
+    }
 }
