@@ -547,7 +547,7 @@ MEDIA QUERIES FOR PHONES
 .pop-up .card input[type="submit"]{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    width: 8rem;
+    width: 9rem;
     margin-top: 0.75rem;
 }
 
@@ -598,6 +598,7 @@ MEDIA QUERIES FOR PHONES
 .middle .submit-cuack .submit-form input[type="submit"]{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
 .middle .submit-cuack .submit-form textarea::placeholder,
@@ -606,7 +607,7 @@ MEDIA QUERIES FOR PHONES
 }
 
 /*==========================RIGHT=========================*/
-main .container .right{
+main .container.two-rows .right{
     height: max-content;
     position: sticky;
     top: var(--sticky-top-right);
@@ -668,3 +669,42 @@ MEDIA QUERIES FOR PHONES
     text-underline-offset: 3px;
 }
 
+/*==========================PROFILE PAGE==============*/
+.right .profile-info{
+    background: var(--color-black);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .profile-info .heading{
+    display: block;
+    gap: 0.75rem;
+}
+
+.right .profile-info .heading h4{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: large;
+}
+
+.right .profile-info .heading p{
+    margin-top: 0.3rem;
+    font-size: small;
+    text-align: center;
+}
+
+.right .profile-info .heading .profile-photo{
+    width:8rem;
+    margin: auto;
+}
+
+.right .profile-info .buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right .profile-info .btn.btn-primary{
+    margin-top: 1rem;
+}
