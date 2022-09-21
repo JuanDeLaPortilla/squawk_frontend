@@ -3,6 +3,7 @@
 :root{
     --color-white: hsl(252, 30%, 100%);
     --color-light: hsl(252, 30%, 95%);
+    --color-light-2: rgba(0,0,0,0.4);
     --color-gray: hsl(240, 2%, 65%);
     --color-primary: hsl(252, 75%, 60%);
     --color-secondary: hsl(252, 100%, 90%);
@@ -13,6 +14,7 @@
     --color-light-dark: hsl(240, 2%, 15%);
 
     --border-radius: 2rem;
+    --border-radius-1: 0.4rem;
     --border-radius-input: 5px;
     --card-border-radius: 1rem;
     --btn-padding: 0.6rem 2rem;
@@ -21,6 +23,15 @@
 
     --sticky-top-left: 5.4rem;
     --sticky-top-right: 5.4rem;
+}
+
+.dark-theme-variables{
+    --color-white: hsl(252, 30%, 0%);
+    --color-black: hsl(252, 30%, 100%);
+    --color-dark: hsl(252, 30%, 95%);
+    --color-light: hsl(240, 2%, 9%);
+    --color-light-dark: hsl(240, 2%, 100%);
+    --color-light-2: rgba(132,139,200,0.18);
 }
 
 *, *::before, *::after{
@@ -221,7 +232,6 @@ main .container.two-rows{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: white;
     font-size: 0.75rem;
     width: 100%;
     position: relative;
@@ -372,7 +382,7 @@ main .container.two-rows{
     font-size: 2.5rem;
     text-align: center;
     padding-bottom: 0.75rem;
-    border-bottom: 5px var(--color-light-dark) solid;
+    border-bottom: 5px hsl(240, 2%, 15%) solid;
 }
 
 .team-col {
