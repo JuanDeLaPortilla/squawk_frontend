@@ -5,15 +5,15 @@
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
-    --color-white: #fff;
+    --color-white: hsl(240, 2%, 9%);
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;
-    --color-dark: #363949;
-    --color-light: rgba(132,139,200,0.18);
+    --color-dark: #edeffd;
+    --color-light: rgba(0,0,0,0.4);
     --color-primary-variant: #111e88;
-    --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
-    
+    --color-dark-variant: #a3bdcc;
+    --color-background: hsl(252, 30%, 0%);
+
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
@@ -25,13 +25,13 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-/*---------DARK THEME VARIABLES------*/
+/*---------LIGHT THEME VARIABLES------*/
 .dark-theme-variables{
-    --color-background: hsl(252, 30%, 0%);
-    --color-white: hsl(240, 2%, 9%);
-    --color-dark: #edeffd;
-    --color-dark-variant: #a3bdcc;
-    --color-light: rgba(0,0,0,0.4);
+    --color-background: #f6f6f9;
+    --color-white: #fff;
+    --color-dark: #363949;
+    --color-dark-variant: #677483;
+    --color-light: rgba(132,139,200,0.18);
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
@@ -576,12 +576,12 @@ main .recent-orders a{
         width: 83vw;
     }
 
-    main table thead tr th:last-child, 
+    main table thead tr th:last-child,
     main table thead tr th:first-child{
         display: none;
     }
 
-    main table tbody tr td:last-child, 
+    main table tbody tr td:last-child,
     main table tbody tr td:first-child{
         display: none;
     }
@@ -616,7 +616,7 @@ main .recent-orders a{
     aside .logo{
         margin-left:  1rem;
     }
-    
+
     aside .logo h2{
         display: inline;
     }

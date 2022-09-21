@@ -20,7 +20,7 @@
     --card-padding: 1rem;
 
     --sticky-top-left: 5.4rem;
-    --sticky-top-right: -18rem;
+    --sticky-top-right: 5.4rem;
 }
 
 *, *::before, *::after{
