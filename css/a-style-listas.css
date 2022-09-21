@@ -586,6 +586,11 @@ main .recent-orders a{
     main table tbody tr td:first-child{
         display: none;
     }
+    
+    .right .sales-analytics .add-product{
+        position: relative;
+        transform: translateY(-80%) translateX(100%);
+    }
 }
 
 /*--------------MEDIA QUERIES------------*/
@@ -698,5 +703,10 @@ main .recent-orders a{
 
     .right .top button span{
         font-size: 2rem;
+    }
+    
+    .right .sales-analytics .add-product{
+        position: relative;
+        transform: translateY(-700%) translateX(200%);
     }
 }

@@ -13,6 +13,7 @@
     --color-light-dark: hsl(240, 2%, 15%);
 
     --border-radius: 2rem;
+    --border-radius-input: 5px;
     --card-border-radius: 1rem;
     --btn-padding: 0.6rem 2rem;
     --search-padding: 0.6rem 1rem;
@@ -124,7 +125,9 @@ nav .search-bar input[type="search"]{
     width: 30vw;
     margin-left: 1rem;
     font-size: 0.9rem;
-    color: var(--color-dark);
+    color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+    outline: none;
 }
 
 nav .search-bar input[type="search"]::placeholder{
@@ -141,7 +144,7 @@ summary{
     cursor: pointer;
 }
 
-summary:hover{
+summary:focus, summary:hover{
     border: 2.5px var(--color-primary) solid;
 }
 
@@ -195,6 +198,12 @@ main .container{
     display: grid;
     position: relative;
     width: 45rem;
+}
+
+main .container.two-rows{
+    grid-template-columns: 1vh auto 20vw;
+    column-gap: 2rem;
+    width: 65vw;
 }
 
 /*========================MIDDLE==========================*/
@@ -276,15 +285,18 @@ main .container{
     border-radius: var(--border-radius);
 }
 
-.middle .create-post input[type="text"]{
+.middle .create-post p{
     justify-self: start;
     width: 100%;
     padding-left: 1rem;
     background: transparent;
-    color: var(--color-dark);
+    color: var(--color-gray);
     margin-right: 1rem;
+    font-size: small;
 }
-
+.middle .create-post:hover{
+    opacity: 0.6;
+}
 /* ============================FEEDS=====================*/
 .middle .feeds .feed{
     background: var(--color-black);
@@ -451,6 +463,12 @@ MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS
     .user-menu{
         right: 2vw;
     }
+
+    main .container.two-rows{
+        grid-template-columns: 0 auto 25vw;
+        column-gap: 2rem;
+        width: 90vw;
+    }
 }
 
 /* ==============================================
@@ -517,8 +535,13 @@ MEDIA QUERIES FOR PHONES
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0.75rem auto;
-    color: var(--color-black);
     transition: border-width 0.2s ease;
+    border-radius: var(--border-radius-input);
+    background: var(--color-dark);
+}
+
+.pop-up .card .login-input::placeholder{
+    color: var(--color-gray);
 }
 
 .pop-up .card input[type="submit"]{
@@ -531,3 +554,117 @@ MEDIA QUERIES FOR PHONES
 .pop-up .card h4, .pop-up .card a{
     margin-bottom: 0.2rem;
 }
+
+/*=========================CREATE CUACK FORM==============*/
+.middle .submit-cuack{
+    padding: var(--card-padding);
+    margin: 1rem 0;
+}
+
+.middle .submit-cuack h4{
+    font-size: x-large;
+}
+
+.middle .submit-cuack .submit-form{
+    background: var(--color-black);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.middle .submit-cuack .submit-form .cuack-input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.70rem 0.70rem;
+    margin: 8px 0;
+    font-family: 'Poppins', sans-serif;
+    border-radius: var(--border-radius-input);
+    background: var(--color-dark);
+}
+
+.middle .submit-cuack .submit-form textarea{
+    width: 100%;
+    height: 10rem;
+    padding: 0.70rem 0.70rem;
+    margin: 8px 0;
+    background: var(--color-dark);
+    font-family: 'Poppins', sans-serif;
+    border-radius: var(--border-radius-input);
+    resize: vertical;
+}
+
+.middle .submit-cuack .submit-form input[type="submit"]{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.middle .submit-cuack .submit-form textarea::placeholder,
+.middle .submit-cuack .submit-form .cuack-input::placeholder{
+    color: var(--color-gray);
+}
+
+/*==========================RIGHT=========================*/
+main .container .right{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+}
+
+/* ==============================================
+MEDIA QUERIES FOR PHONES
+================================================= */
+
+@media screen and (max-width: 900px){
+    main .container .right{
+        display: absolute;
+        padding: var(--card-padding);
+    }
+    main .container.two-rows{
+        grid-template-columns: none;
+        width: 100vw;
+    }
+}
+/*===========================TERMS INFO=================*/
+.right .terms-info .heading{
+    display: inline-flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right .terms-info .heading h4{
+    font-size: large;
+}
+
+.right .terms-info .heading .logo{
+    width:1.8rem;
+}
+
+.right .terms-info{
+    background: var(--color-black);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.terms-list ol{
+    padding: var(--card-padding);
+}
+
+.terms-list ol > li{
+    list-style-type: decimal;
+    font-size: 0.90rem;
+    padding: 0.25rem;
+}
+
+.terms-list p{
+    font-size: small;
+}
+
+.terms-list a{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+

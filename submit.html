@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Squawk! - Home</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Conexion con Iconos -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"/>
+        <!-- Conexcion con CSS -->
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <a href="./index.html">
+                    <h2 class="log">
+                        Squawk!
+                        <img class= "logo" src="./img/logo_white.png"/>
+                    </h2>
+                </a>
+
+                <div class = "search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type = "search" placeholder="¡Busca reseñas o productos!">
+                </div>
+
+                <div class = "create">
+                    <label class="btn btn-primary" for="create-cuack">Crear</label>
+
+                    <details>
+                        <summary class="profile-photo">
+                            <img src="./img/profile-1.jpg"/>
+                        </summary>
+                        <ul class="user-menu">
+                            <li>
+                                <a href="#"><i class="uil uil-user-circle"></i>Mi Perfil</a>
+                            </li>
+                            <li>
+                                <i class="uil uil-moon"></i>Cambiar Aspecto
+                            </li>                           
+                            <li>
+                                <a href="#"><i class="uil uil-setting"></i>Ajustes</a>
+                            </li>
+                            <li>
+                                <a href="./about-us.html"><i class="uil uil-info-circle"></i>Acerca de Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="uil uil-file-alt"></i>Terminos y Condiciones</a>
+                            </li>
+                            <li>
+                                <i class="uil uil-sign-out-alt"></i>Cerrar Sesión
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <div class="container two-rows">
+                <div></div>
+                <!-- MIDDLE -->
+                <div class="middle">
+                    <div class="submit-cuack">
+
+                        <div class="heading">
+                            <h4>Crear un Cuack</h4>
+                        </div>
+
+                        <form action="" class="submit-form">
+                            <div class="content">
+                                <input type="text" class="cuack-input" placeholder="Titulo" name="title" required><br>
+                                <textarea placeholder="Contenido" name="content"></textarea><br>
+                                <input type="submit" class="btn btn-primary" value="Publicar">
+                            </div>
+                        </form>
+
+                    </div>
+                </div> 
+                <!-- RIGHT -->
+                <div class="right">
+                    <div class="terms-info">
+                        <div class="heading">
+                            <img class= "logo" src="./img/logo_white.png"/>
+                            <h4>Publicar en Squawk!</h4>
+                        </div>
+                        <div class="terms-list">
+                            <ol>
+                                <li>Recuerda a las personas</li>
+                                <li>Compórtate como lo harías en la vida real</li>
+                                <li>No faltes el respeto a nadie, ni a las empresas</li>
+                            </ol>
+                            <p class="text-muted">Porfavor, ten en cuenta la <a href="#"><b>Politica de contenido de Squawk!</b></a> antes de publicar algo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
