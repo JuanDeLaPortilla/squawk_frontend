@@ -370,7 +370,7 @@ main .container.two-rows{
 
 }
 
-#our-team{
+#our-team,#about-us,#our-purpouse-vision,#our-values{
     padding: var(--card-padding);
     margin: 1rem 0;
     background: var(--color-black);
