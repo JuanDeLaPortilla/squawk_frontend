@@ -692,7 +692,7 @@ MEDIA QUERIES FOR PHONES
     padding: var(--card-padding);
 }
 
-.terms-list pl > li{
+.terms-list ol > li{
     list-style-type: decimal;
 }
 
