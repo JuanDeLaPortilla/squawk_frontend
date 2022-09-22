@@ -366,8 +366,14 @@ main .container.two-rows{
 
 /*========================ABOUT US======================*/
 .about-us{
-    background: var(--color-black);
     padding: var(--card-padding);
+
+}
+
+#our-team{
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    background: var(--color-black);
     border-radius: var(--card-border-radius);
     margin-bottom: 1.5rem;
 }
@@ -380,7 +386,7 @@ main .container.two-rows{
 }
 
 .about-us h1{
-    font-size: 2.5rem;
+    font-size: xx-large;
     text-align: center;
     padding-bottom: 0.75rem;
     border-bottom: 5px hsl(240, 2%, 15%) solid;
@@ -392,7 +398,7 @@ main .container.two-rows{
 }
 
 .team-col img {
-    width: 17.5rem;
+    width: 98%;
     display: block;
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -400,13 +406,13 @@ main .container.two-rows{
 }
 
 .team-col h2 {
-    font-size: 2rem;
+    font-size: x-large;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .team-col p {
-    font-size: 1rem;
+    font-size: medium;
     line-height: 2rem;
     padding: 0.95rem 0;
 }
@@ -431,12 +437,23 @@ main .container.two-rows{
         order: 2;
     }
 
+    .team-col {
+        padding: 0.5rem 2px;
+    }
     .team-col h1 {
-        font-size: 40px;
+        font-size: medium;
     }
 
+    .team-col h2{
+        text-align: center;
+    }
     .team-col p {
-        font-size: 17px;
+        font-size: medium;
+        text-align: center
+    }
+
+    .team-col img{
+        width: 45%
     }
 }
 
@@ -671,12 +688,19 @@ MEDIA QUERIES FOR PHONES
     padding: var(--card-padding);
 }
 
-.terms-list ol{
+.terms-list ol, .terms-list ul{
     padding: var(--card-padding);
 }
 
-.terms-list ol > li{
+.terms-list pl > li{
     list-style-type: decimal;
+}
+
+.terms-list ul > li{
+    list-style-type: disc;
+}
+
+.terms-list ol > li, .terms-list ul > li{
     font-size: 0.90rem;
     padding: 0.25rem;
 }
