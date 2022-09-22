@@ -428,17 +428,6 @@ main .container.two-rows{
     .team-col {
         padding: 0.5rem 2px;
     }
-    .team-col h1 {
-        font-size: medium;
-    }
-
-    .team-col h2{
-        text-align: center;
-    }
-    .team-col p {
-        font-size: medium;
-        text-align: center
-    }
 
     .team-col img{
         width: 70%
@@ -458,12 +447,8 @@ main .container.two-rows{
         order: 2;
     }
 
-    .team-col h1 {
-        font-size: 26px;
-    }
-
-    .team-col p {
-        font-size: 15px;
+    .team-col h2, .team-col p{
+        text-align: center;
     }
     
     .team-col img{
