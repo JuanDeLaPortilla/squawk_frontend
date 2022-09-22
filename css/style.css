@@ -250,6 +250,7 @@ main .container.two-rows{
 
 .middle .stories .story .name{
     z-index: 2;
+    color: white;
 }
 
 .middle .stories .story:nth-child(1){
